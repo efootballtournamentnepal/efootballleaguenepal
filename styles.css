@@ -1,0 +1,197 @@
+/* Code by : Beeplove Bhandari */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #e8e8e8;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 652px;
+    margin: 0 auto;
+    background-color: #242832;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    color: #FFD700; 
+    font-size: 1.5em;
+    
+}
+
+.season-dropdown {
+    padding: 5px;
+    border: 1px solid #444746;
+    background-color: #1f1f1f;
+    color: #e8e8e8;
+    border-radius: 4px;
+}
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #e8e8e8;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444746;
+    text-align: left;
+}
+
+th {
+    background-color: #1f1f1f;
+    color: #FFD700;
+}
+
+td {
+    background-color: #2c2c2c;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.position {
+    margin-right: 5px;
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+.live-ticker {
+    position:unset;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    color: #FFD700; 
+    padding: 10px;
+    text-align:center;
+    font-size: 18px;
+    animation: ticker 15s linear infinite;
+    background-color: #1e1e1e;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .team-logo {
+        width: 20px;
+    }
+    .header-logo {
+        width: 40px;
+    }
+}
+
+
+
+
+.live-animation {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.header-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+    display: flex;
+    justify-content:last baseline
+}
+
+footer p a {
+    font-size: 14px;
+    color: inherit; /* This ensures the link has the same color as the surrounding text */
+    text-decoration: none; /* Optional: removes the underline */
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+
+footer a:not(:last-child) {
+    margin-right: 10px; /* Adds space between the social media links */
+}
+
+footer .designer-link {
+    font-size: 14px; /* Ensure the font size matches the surrounding text */
+    color: inherit;  /* Ensure the color matches the surrounding text */
+}
+
+/* Code by : Beeplove Bhandari */
+
+
+
